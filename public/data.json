@@ -1,0 +1,44 @@
+{
+    "data": [
+        {
+            "name": "Nagy Dávid",
+            "email": "david.nagy@nagydavid.com",
+            "phone": "+3630303030"
+        },
+        {
+            "name": "Kiss Bence",
+            "email": "bence.kiss@kissbence.com",
+            "phone": "+3670303030"
+        },
+        {
+            "name": "Kovács Ibolya",
+            "email": "david.nagy@nagydavid.com",
+            "phone": "+3630303030"
+        },
+        {
+            "name": "Czöndör László",
+            "email": "bence.kiss@kissbence.com",
+            "phone": "+3670303030"
+        },
+        {
+            "name": "Apro Bálint",
+            "email": "balint.apro@aprobalint.com",
+            "phone": "+3670504040"
+        },
+        {
+            "name": "Fodor Bernadett",
+            "email": "bence.kiss@kissbence.com",
+            "phone": "+3670303030"
+        },
+        {
+            "name": "Tóth Tamás",
+            "email": "bence.kiss@kissbence.com",
+            "phone": "+3670303030"
+        },
+        {
+            "name": "Dávid Zoltán",
+            "email": "bence.kiss@kissbence.com",
+            "phone": "+3670303030"
+        }
+    ]
+}

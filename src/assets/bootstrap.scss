@@ -1,0 +1,55 @@
+/* Customize*/
+$primary: #e60000;
+$dark: #191919;
+$gray-700: #4c4c4c;
+
+/* Required */
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+$theme-colors: map-merge(("gray-700": $gray-700), $theme-colors);
+
+@import "node_modules/bootstrap/scss/mixins";
+
+/* Optional */
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/card";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/forms";
+
+/* Global */
+body {
+    font-family: sans-serif;
+}
+
+.page-wrap {
+    min-height: 600px;
+    text-align: center;
+}
+
+.site-title {
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 80px;
+    padding-bottom: 10px;
+    line-height: 1.1;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 50px;
+        height: 3px;
+        background: $primary;
+    }
+
+    @media (max-width: 32em) {
+        font-size: 30px;
+    }
+}
