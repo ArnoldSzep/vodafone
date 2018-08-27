@@ -25,6 +25,12 @@ export default new Router({
       name: "edit-profile",
       props: true,
       component: () => import("./views/EditProfile.vue")
+    },
+    {
+      path: "/new-profile/",
+      name: "new-profile",
+      props: true,
+      component: () => import("./views/NewProfile.vue")
     }
   ]
 })

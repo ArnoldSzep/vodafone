@@ -1,5 +1,5 @@
 <template>
-    <div class="col-md-6 col-lg-4 mb-4">
+    <div class="profile-item-col col-md-6 col-lg-4 mb-4">
         <router-link 
         :to="{ name: 'profile', params: { id: index, contact: contact }}" 
         class="card text-muted shadow-sm profile-item" 

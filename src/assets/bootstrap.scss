@@ -22,7 +22,8 @@ $theme-colors: map-merge(("gray-700": $gray-700), $theme-colors);
 
 /* Global */
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    overflow-y: scroll;
 }
 
 .page-wrap {
@@ -50,6 +51,7 @@ body {
     }
 
     @media (max-width: 32em) {
-        font-size: 30px;
+        font-size: 33px;
+        margin-bottom: 40px;
     }
 }

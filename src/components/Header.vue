@@ -3,9 +3,9 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-sm text-left">
-          <router-link to="/"><img alt="Vue logo" src="../assets/logo.svg" class="logo"></router-link> 
+          <router-link to="/"><img alt="Vue logo" src="../assets/logo.svg" class="logo d-block mx-auto ml-sm-0"></router-link> 
         </div>
-        <div class="col-sm text-right">
+        <div class="col-sm text-right d-none d-sm-block">
           <input type="search" name="" id="" 
           class="form-control ml-auto" 
           v-model="query" 
@@ -37,6 +37,7 @@ export default {
 <style scoped lang="scss">
 .main-header {
   margin-bottom: 84px;
+
 }
 .form-control {
   max-width: 450px;

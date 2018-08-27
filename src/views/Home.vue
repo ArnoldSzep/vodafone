@@ -5,14 +5,14 @@
     <letter-list></letter-list>
 
     <div class="container">
-      <div class="row">
+      <transition-group name="list" tag="div" class="row">
         <profile-item 
         v-for="(contact, index) in contacts"
         v-bind:contact="contact" 
         v-bind:index="index" 
         v-bind:key="index">
         </profile-item>
-      </div>
+      </transition-group>
     </div>
   </div>
 </template>
@@ -58,14 +58,14 @@ export default {
         var found = false;
         if (item.name.indexOf(data.query) !== -1) {
           found = true;
-        } else if (item.phone.indexOf(data.query) !== -1){
+        } else if (item.phone.indexOf(data.query) !== -1) {
           found = true;
-        } else if (item.email.indexOf(data.query) !== -1){
+        } else if (item.email.indexOf(data.query) !== -1) {
           found = true;
         }
 
         // If item ok return it
-        if(found){
+        if (found) {
           return item;
         }
       });
@@ -73,3 +73,17 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.profile-item-col {
+  transition: all .5s;
+}
+.list-enter, .list-leave-to
+/* .list-complete-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.list-leave-active {
+  position: absolute;
+}
+</style>

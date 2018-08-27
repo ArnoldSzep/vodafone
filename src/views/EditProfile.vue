@@ -6,24 +6,23 @@
                 <div class="row mb-3 align-items-center">
                     <div class="col-sm-5 text-sm-right text-muted">Name:</div>
                     <div class="col-sm-6 text-sm-left">
-                        <input type="text" class="form-control" v-model="name" placeholder="Phone">
+                        <input type="text" class="form-control text-center text-sm-left mx-auto ml-sm-0" v-model="name" placeholder="Phone">
                     </div>
                 </div>
                 <div class="row mb-3 align-items-center">
                     <div class="col-sm-5 text-sm-right text-muted">E-mail:</div>
                     <div class="col-sm-6 text-sm-left">
-                        <input type="email" class="form-control" v-model="email" placeholder="Phone">
+                        <input type="email" class="form-control text-center text-sm-left mx-auto ml-sm-0" v-model="email" placeholder="Phone">
                     </div>
                 </div>
                 <div class="row mb-3 align-items-center">
                     <div class="col-sm-5 text-sm-right text-muted">Phone:</div>
                     <div class="col-sm-6 text-sm-left">
-                        <input type="text" class="form-control" v-model="phone" placeholder="Phone">
+                        <input type="text" class="form-control text-center text-sm-left mx-auto ml-sm-0" v-model="phone" placeholder="Phone">
                     </div>
                 </div>
             </div>
             <div class="profile-details mb-3">
-
                 <button v-if="!success" class="btn btn-outline-dark px-4 py-2" @click="saveContact">Save Contact</button>
                 <h3 v-else class="text-success">Success!</h3>
 
@@ -35,8 +34,6 @@
 
 
 <script>
-//import { serverBus } from "@/main";
-
 export default {
   name: "edit-profile",
   props: {
@@ -103,5 +100,8 @@ export default {
 .profile-details {
   font-size: 18px;
   margin-bottom: 60px;
+}
+.form-control {
+  max-width: 350px;
 }
 </style>
