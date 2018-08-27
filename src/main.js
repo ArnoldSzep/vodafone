@@ -15,7 +15,7 @@ window.eventBus = new Vue();
 // but to be fair this is my first time with vue and a needed a quick solution
 window.contactData = {};
 
-fetch("/vodafone/dist/data.json")
+fetch("/data.json")
   .then(response => response.json())
   .then(json => {
     contactData = json.data;
