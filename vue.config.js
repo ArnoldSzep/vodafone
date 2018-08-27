@@ -1,3 +1,5 @@
 module.exports = {
-    baseUrl: '/vodafone/dist/'
+  baseUrl: process.env.NODE_ENV === 'production'
+    ? '/'
+    : '/vodafone/dist/'
 }
